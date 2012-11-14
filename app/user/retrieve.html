@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>User: {{ .Email }}</title>
+</head>
+
+<body>
+	<h1>User: {{ .Email }}</h1>
+    <table border="1">
+		<tr>
+			<th>ID</th>
+			<td>{{ .ID.Hex }}</td>
+		</tr>
+		<tr>
+			<th>Email</th>
+			<td>{{ .Email }}</td>
+		</tr>
+		<tr>
+			<th>Password</th>
+			<td>{{printf "%s" .Password}}</td>
+		</tr>
+    </table>
+</body>
+
+</html>
