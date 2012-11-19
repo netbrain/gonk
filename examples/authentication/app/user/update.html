@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Update</title>
+</head>
+
+<body>
+	<h1>Update User : {{.Email}}</h1>
+    <form method="post" action="/user/update/{{.ID.Hex}}" autocomplete="off">
+      <div>
+        <div>
+          <span>Email:</span>
+          <span><input type="text" name="email" autofocus="autofocus" required="required" value="{{.Email}}" /></span>
+        </div>
+        <div>
+          <span>Password:</span>
+          <span><input type="password" name="password" required="required" /></span>
+        </div>
+      </div>
+      <div><input type="submit" value="Update" /></div>
+    </form>
+</body>
+
+</html>

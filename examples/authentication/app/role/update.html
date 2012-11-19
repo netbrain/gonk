@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Update</title>
+</head>
+
+<body>
+	<h1>Update Role : {{.Name}}</h1>
+    <form method="post" action="/role/update/{{.ID.Hex}}" autocomplete="off">
+      <div>
+        <div>
+          <span>Name:</span>
+          <span><input type="text" name="name" autofocus="autofocus" required="required" value="{{.Name}}"/></span>
+        </div>
+      </div>
+      <div><input type="submit" value="Update" /></div>
+    </form>
+</body>
+
+</html>
